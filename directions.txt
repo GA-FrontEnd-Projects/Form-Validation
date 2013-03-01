@@ -1,0 +1,36 @@
+RealtyCorp Form Validation
+
+Difficulty Level: Medium
+
+Technologies/skills used: Javascript/jQuery, CSS, DOM Manipulation, Regular Expressions
+
+
+
+Problem Description:
+
+RealtyCorp, a stylish new real estate broker, has hired you to finish building their website. The previous developer was more of a designer, really, so while the site looks decent, it's not quite done.
+
+RealtyCorp keeps getting submissions from their contact form that are missing key pieces of information about their potential clients. You tell them they should be validating users' information before letting them submit the form, and they agree that this is a fantastic idea. They ask you to build something to perform validation on the contact form.
+
+
+
+Requirements:
+
+	1) First and foremost, the form should not be submitted before each required text field has data. Write a simple script that checks to see that the text fields with asterisks next to them are not empty when a form is submitted. If any of the fields are empty, prevent the form from being submitted and call an alert box that will display the IDs of the required fields that are empty.
+
+	2) The form should also not be submitted unless there are at least two neighborhoods selected. If no neighborhoods or fewer than one neighborhood is selected, prevent the form from being submitted and display an alert box that lets the user know that they need to select at least two neighborhoods.
+
+	3) Alert boxes are ugly and annoying to users. When the form is submitted, any required fields (including neighborhoods) that are empty or not fully completed should display a red error message next to the field label (and the form should not be submitted). If the user fixes the field after initially submitting it without data, the error message for that field should no longer display. Once all required fields are filled out to RealtyCorp's satisfaction, allow the user to submit the form.
+
+	4) Sometimes it's nice to let users know that they have missed a required field or their entry isn't in a suitable format before they've gotten all the way through the form. Come up with and implement a way to check the user's input for text fields immediately after they're done entering text in a given field.
+
+	5) The email address on this form won't do anyone any good unless it's correctly formatted. Sometimes users type their email addresses incorrectly (by accident), and if the phone number field isn't filled out, then RealtyCorp is left with no way to contact the person who sent them the request. Find a regular expression for email addresses and show a different error message if the value of the email field does not match the regular expression. Feel free to ask for help on this if this gets confusing.
+
+	6) If you have time, create regular expressions for all required text fields (this approach won't work for the checkboxes) and modularize your validation by having it iterate over the fields and check each field's value against its RegExp. How will you handle fields that don't have regular expressions attached to them?
+
+
+	Hints:
+
+	This is mostly a pure Javascript assignment. Anything involving animation or selecting elements may be done using jQuery, but most of the rest of it doesn't need it. If you get stuck, try looking for the answer in regular Javascript first.
+
+	You may also find it easier to add an attribute to certain elements in the markup to distinguish between required and non-required form fields.
